@@ -12,10 +12,10 @@
         </a>
       </div>
     </div>
-    <div class="scroll-indicator">
+    <!-- <div class="scroll-indicator">
       <span>Scroll down</span>
       <i class="fas fa-chevron-down"></i>
-    </div>
+    </div> -->
   </section>
 </template>
 

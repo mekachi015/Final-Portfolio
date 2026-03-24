@@ -88,36 +88,37 @@ export default {
   },
   methods: {
     async submitForm() {
-      this.loading = true;
-      this.message = '';
-      
-      try {
-        // For now, we'll simulate the API call
-        // In production, replace with actual backend endpoint
-        console.log('Form data:', this.formData);
-        
-        // Simulate API call delay
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        
-        this.isSuccess = true;
-        this.message = 'Thank you for your message! I will get back to you soon.';
-        
-        // Reset form
-        this.formData = {
-          name: '',
-          email: '',
-          message: ''
-        };
-      } catch (error) {
-        this.isSuccess = false;
-        this.message = 'Sorry, there was an error sending your message. Please try again.';
-        console.error('Error:', error);
-      } finally {
-        this.loading = false;
-      }
+  this.loading = true;
+  this.message = '';
+  
+  try {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contacts`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(this.formData)
+    });
+
+    if (!response.ok) {
+      throw new Error(await response.text());
     }
+
+    this.isSuccess = true;
+    this.message = 'Thank you for your message! I will get back to you soon.';
+    
+    this.formData = { name: '', email: '', message: '' };
+
+  } catch (error) {
+    this.isSuccess = false;
+    this.message = 'Sorry, there was an error sending your message. Please try again.';
+    console.error('Error:', error);
+  } finally {
+    this.loading = false;
   }
 }
+}}
+  
 </script>
 
 <style scoped>

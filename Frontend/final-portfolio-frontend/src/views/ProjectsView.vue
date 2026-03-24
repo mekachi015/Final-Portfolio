@@ -7,8 +7,8 @@
 					<div class="project-header">
 						<h3 class="project-title">{{ project.name }}</h3>
 						<div class="project-links">
-							<a :href="project.cityUrl" target="_blank" class="project-link">
-								<i class="fas fa-city"></i> City
+							<a :href="project.citeUrl" target="_blank" class="project-link">
+								<i class="fas fa-external-link-alt"></i> Site
 							</a>
 							<a :href="project.repoUrl" target="_blank" class="project-link">
 								<i class="fab fa-github"></i> GitHub
@@ -33,38 +33,40 @@ export default {
 	data() {
 		return {
 			projects: [
+				
 				{
 					id: 1,
+					name: 'Tech-Oracle',
+					description: 'A knowledge base and Q&A platform for tech professionals.',
+					techStack: ['React', 'Python', 'MongoDB'],
+					citeUrl: 'https://tech-oracle-amber.vercel.app/',
+					repoUrl: 'https://github.com/mekachi015/Tech-Oracle',
+				},
+				{
+					id: 4,
 					name: 'Mzansi Plaza',
 					description: 'A modern e-commerce platform for local businesses with real-time inventory and order management.',
 					techStack: ['Angular', 'Spring Boot', 'PostgreSQL', 'Docker'],
-					cityUrl: 'https://www.johannesburg.za.com/',
-					repoUrl: 'https://github.com/katlegomakoti/mzansi-plaza',
+					citeUrl: 'https://www.johannesburg.za.com/',
+					repoUrl: 'https://github.com/The-DigitalAcademy/eMzanziplaza',
 				},
 				{
 					id: 2,
 					name: 'iRenew Store',
 					description: 'A web app for renewable energy product sales and customer management.',
 					techStack: ['Vue.js', 'Node.js', 'MongoDB'],
-					cityUrl: 'https://www.capetown.gov.za/',
-					repoUrl: 'https://github.com/katlegomakoti/irenew-store',
+					citeUrl: 'https://www.capetown.gov.za/',
+					repoUrl: 'https://github.com/tebohonthako/iRenew-store',
 				},
 				{
 					id: 3,
 					name: 'FootyFocus',
 					description: 'A football analytics dashboard with live match stats and player insights.',
 					techStack: ['React', 'Express', 'MySQL'],
-					cityUrl: 'https://www.durban.gov.za/',
+					citeUrl: 'https://www.durban.gov.za/',
 					repoUrl: 'https://github.com/katlegomakoti/footyfocus',
-				},
-				{
-					id: 4,
-					name: 'Tech-Oracle',
-					description: 'A knowledge base and Q&A platform for tech professionals.',
-					techStack: ['Salesforce', 'Apex', 'LWC'],
-					cityUrl: 'https://www.pretoria.gov.za/',
-					repoUrl: 'https://github.com/katlegomakoti/tech-oracle',
-				},
+				}
+				
 			],
 		}
 	},
