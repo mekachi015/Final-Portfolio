@@ -37,15 +37,23 @@ export default {
 				{
 					id: 1,
 					name: 'Tech-Oracle',
-					description: 'A knowledge base and Q&A platform for tech professionals.',
+					description: 'A basic AI-powered repair guide generator, providing step-by-step instructions for common tech issues.',
 					techStack: ['React', 'Python', 'MongoDB'],
 					citeUrl: 'https://tech-oracle-amber.vercel.app/',
 					repoUrl: 'https://github.com/mekachi015/Tech-Oracle',
 				},
 				{
+					id: 3,
+					name: 'FootyFocus',
+					description: 'A football analytics dashboard with live match stats and player insights.',
+					techStack: ['Angular', 'Java', 'PostgreSQL'],
+					citeUrl: 'https://www.durban.gov.za/',
+					repoUrl: 'https://github.com/katlegomakoti/footyfocus',
+				},
+				{
 					id: 4,
 					name: 'Mzansi Plaza',
-					description: 'A modern e-commerce platform for local businesses with real-time inventory and order management.',
+					description: 'An e-commerce platform designed to promote a circular economy by connecting local sellers and buyers for second-hand goods.',
 					techStack: ['Angular', 'Spring Boot', 'PostgreSQL', 'Docker'],
 					citeUrl: 'https://www.johannesburg.za.com/',
 					repoUrl: 'https://github.com/The-DigitalAcademy/eMzanziplaza',
@@ -53,18 +61,10 @@ export default {
 				{
 					id: 2,
 					name: 'iRenew Store',
-					description: 'A web app for renewable energy product sales and customer management.',
-					techStack: ['Vue.js', 'Node.js', 'MongoDB'],
+					description: 'A web app for second hand electronics, allowing users to buy and sell refurbished devices.',
+					techStack: ['Angular', 'Java', 'PostgreSQL'],
 					citeUrl: 'https://www.capetown.gov.za/',
 					repoUrl: 'https://github.com/tebohonthako/iRenew-store',
-				},
-				{
-					id: 3,
-					name: 'FootyFocus',
-					description: 'A football analytics dashboard with live match stats and player insights.',
-					techStack: ['React', 'Express', 'MySQL'],
-					citeUrl: 'https://www.durban.gov.za/',
-					repoUrl: 'https://github.com/katlegomakoti/footyfocus',
 				}
 				
 			],
