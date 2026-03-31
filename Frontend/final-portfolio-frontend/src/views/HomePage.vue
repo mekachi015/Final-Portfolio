@@ -29,8 +29,8 @@
         </div>
 
         <div class="cta-row">
-          <a href="#contact" class="btn-primary">Get in touch</a>
-          <a href="#projects" class="btn-ghost">View work</a>
+          <router-link to="/contact" class="btn-ghost btn-black">Get in touch</router-link>
+          <router-link to="/projects" class="btn-ghost btn-black">View work</router-link>
         </div>
 
         <div class="social-links">
@@ -52,7 +52,7 @@
             </div>
             <div class="card-meta">
               <span class="card-name">Katlego Makoti</span>
-              <span class="card-loc"><i class="fas fa-map-marker-alt"></i> Johannesburg, SA</span>
+              <span class="card-loc"><i class="fas fa-map-marker-alt"></i> South Africa</span>
             </div>
           </div>
 
@@ -63,7 +63,7 @@
             </div>
             <div class="stat-divider"></div>
             <div class="stat">
-              <span class="stat-num">10+</span>
+              <span class="stat-num">6+</span>
               <span class="stat-label">Projects</span>
             </div>
             <div class="stat-divider"></div>
@@ -282,17 +282,24 @@ export default {
   margin-bottom: 2.5rem;
   animation: fadeUp 0.6s ease 0.7s both;
 }
-.btn-primary {
+
+/* Black button style for both CTAs */
+.btn-black {
+  background: black;
+  color: white !important;
+  border: none;
   padding: 0.75rem 1.75rem;
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
-  color: white;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
   transition: opacity 0.2s, transform 0.2s;
+  display: inline-block;
 }
-.btn-primary:hover { opacity: 0.85; transform: translateY(-2px); }
+.btn-black:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
 
 .btn-ghost {
   padding: 0.75rem 1.75rem;
@@ -396,10 +403,12 @@ export default {
   font-family: 'Syne', sans-serif;
   font-weight: 800;
   font-size: 1.5rem;
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: black; /* Distinct orange-yellow color */
+  /* Optionally, keep the gradient for fallback: */
+  /* background: linear-gradient(135deg, var(--accent), var(--accent2)); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  /* background-clip: text; */
 }
 .stat-label {
   display: block;
