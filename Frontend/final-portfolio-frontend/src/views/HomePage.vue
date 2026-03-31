@@ -48,7 +48,7 @@
         <div class="profile-card">
           <div class="card-header">
             <div class="avatar-ring">
-              <div class="avatar-inner">KM</div>
+              <div class="avatar-inner"><img src="/whatsappImage.jpg" alt="Katlego Makoti"></div>
             </div>
             <div class="card-meta">
               <span class="card-name">Katlego Makoti</span>
@@ -363,15 +363,24 @@ export default {
   background: linear-gradient(135deg, var(--accent), var(--accent2));
   flex-shrink: 0;
 }
-.avatar-inner {
-  width: 100%; height: 100%;
+.avatar-inner img {
+  width: 100%;
+  height: 100%;
   background: var(--surface2);
   border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Syne', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  color: var(--accent2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
 }
 .card-name {
   display: block;
