@@ -9,16 +9,16 @@
             <i class="fas fa-envelope"></i>
             <div>
               <h4>Email</h4>
-              <p>katiegomakoti@gmail.com</p>
-              <p>katiegomakoti07@gmail.com</p>
+              <p><a href="mailto:katlegomakoti@gmail.com">katlegomakoti@gmail.com</a></p>
+              <p><a href="mailto:katlegomakoti07@gmail.com">katlegomakoti07@gmail.com</a></p>
             </div>
           </div>
           <div class="info-item">
             <i class="fas fa-phone"></i>
             <div>
               <h4>Phone</h4>
-              <p>+27 61 419 3439</p>
-              <p>+27 77 371 6862</p>
+              <p><a href="tel:+27614193439">+27 61 419 3439</a></p>
+              <p><a href="tel:+27773716862">+27 77 371 6862</a></p>
             </div>
           </div>
           <div class="info-item">
@@ -26,6 +26,20 @@
             <div>
               <h4>Location</h4>
               <p>Johannesburg, South Africa</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <h4>LinkedIn</h4>
+              <p><a href="https://www.linkedin.com/in/katlego-makoti-7802a7126/" target="_blank" rel="noopener noreferrer">linkedin.com/in/katlego-makoti</a></p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fab fa-github"></i>
+            <div>
+              <h4>GitHub</h4>
+              <p><a href="https://github.com/mekachi015" target="_blank" rel="noopener noreferrer">github.com/mekachi015</a></p>
             </div>
           </div>
         </div>
@@ -183,6 +197,17 @@ export default {
 .info-item p {
   color: #7f8c8d;
   margin-bottom: 0.25rem;
+}
+
+.info-item p a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.info-item p a:hover {
+  text-decoration: underline;
+  color: #2980b9;
 }
 
 .contact-form {
